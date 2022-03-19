@@ -68,6 +68,10 @@ html, body{
     font-size: 2.5rem;
 }
 
+.table ul i:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1000px){
     .table ul li a{
         display: none;
