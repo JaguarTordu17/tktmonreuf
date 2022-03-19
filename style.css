@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Comfortaa', cursive;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -13,12 +14,14 @@ html, body{
     background-size: cover;
     overflow: hidden;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .table{
     width: 100%;
     min-height: 10%;
-    max-height: 10%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -34,18 +37,11 @@ html, body{
 
 .table ul li{
     display: inline-block;
-    margin-left: 2%;
-    margin-right: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto;
-}
-
-.table ul li a:hover{
-    font-size: 2.3rem;
-    transition: 0.2s ease-in-out;
+    min-width: 15%;
 }
 
 .table ul span{
@@ -56,13 +52,18 @@ html, body{
 .table ul li a{
     text-decoration: none;
     color: grey;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.table ul li:hover a, .table ul li:hover i{
+    font-size: 3rem;
     transition: 0.2s ease-in-out;
 }
 
 .table ul i{
     color: grey;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
@@ -71,13 +72,16 @@ html, body{
         display: none;
     }
     .table ul li i{
-        font-size: 4.3rem;
+        font-size: 4rem;
+    }
+    .table ul li:hover a, .table ul li:hover i{
+        font-size: 4rem;
+        cursor: pointer;
     }
 }
 
 .content{
     width: 100%;
-    min-height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,11 +158,11 @@ html, body{
 
 .rights{
     width: 100%;
-    min-height: 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1%;
 }
 
 .rights span:nth-child(1){
