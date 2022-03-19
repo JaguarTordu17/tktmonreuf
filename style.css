@@ -18,6 +18,7 @@ html, body{
 .table{
     width: 100%;
     min-height: 10%;
+    max-height: 10%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -70,7 +71,7 @@ html, body{
         display: none;
     }
     .table ul li i{
-        font-size: 5rem;
+        font-size: 4.3rem;
     }
 }
 
