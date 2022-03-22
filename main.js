@@ -1,7 +1,7 @@
 function copyToClickBoard(){
     var content = document.getElementById('ip');
 
-    navigator.clipboard.writeText(content.innerHTML)
+    navigator.clipboard.writeText("play.tktmonreuf.tk")
         .then(() => {
         content.innerText = "IP copiée !";
     })
